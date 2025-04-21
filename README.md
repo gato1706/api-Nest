@@ -3,7 +3,7 @@
   &nbsp;&nbsp;&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript Logo" height="60"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="https://www.prisma.io/images/og-image.png" alt="Prisma Logo" height="60"/>
+  
 </p>
 
 # 🚀 NestJS Study API — Based on Rocketseat Lesson 🔥
