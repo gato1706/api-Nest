@@ -1,57 +1,61 @@
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
+  <img src="https://nestjs.com/img/logo-small.svg" alt="NestJS Logo" height="60"/>
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript Logo" height="60"/>
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://www.prisma.io/images/og-image.png" alt="Prisma Logo" height="60"/>
 </p>
 
-# 🚀 NestJS API de Estudos — Rocketseat 🔥
+# 🚀 NestJS Study API — Based on Rocketseat Lesson 🔥
 
-Este projeto foi desenvolvido com o objetivo de aprender os fundamentos do NestJS, explorando os conceitos de **injeção de dependência**, **inversão de dependência**, e integração com **Prisma ORM** para acesso a banco de dados.  
-O projeto segue a arquitetura modular que o NestJS propõe, e foi baseado na aula do Diego Fernandes (Rockeseat), disponível neste link:  
-📺 [Assista a aula aqui](https://www.youtube.com/live/TRa55WbWnvQ?si=W6OI7_pqaOHO5Kt2)
-
----
-
-## 📦 Tecnologias Utilizadas
-
-- **[NestJS](https://nestjs.com/)** — Framework Node.js com foco em arquitetura escalável.
-- **[Prisma ORM](https://www.prisma.io/)** — ORM moderno, typesafe e auto-gerado para Node.js e TypeScript.
-- **TypeScript** — Tipagem estática pra deixar o código mais robusto.
-- **SQLite** (ou PostgreSQL) — Banco de dados utilizado durante os testes locais.
+This project was built with the goal of learning the fundamentals of **NestJS**, exploring key concepts like **dependency injection**, **dependency inversion**, and integration with **Prisma ORM** for database access.  
+It follows the modular architecture promoted by NestJS, and is based on a lesson by Diego Fernandes (Rocketseat), available at:  
+📺 [Watch the lesson here](https://www.youtube.com/live/TRa55WbWnvQ?si=W6OI7_pqaOHO5Kt2)
 
 ---
 
-## 🎯 Objetivos do Projeto
+## 📦 Technologies Used
 
-- Entender a estrutura de um projeto NestJS.
-- Aplicar o padrão de **injeção de dependências** via **providers**.
-- Compreender a **inversão de dependência** na prática.
-- Integrar o Prisma ao NestJS para realizar operações com banco de dados.
-- Praticar a criação de **módulos**, **controllers**, **services** e **repositórios customizados**.
-
----
-
-## 🧠 Conceitos Explorados
-
-- **Módulos (Modules):** Estrutura base do Nest para organização do código.
-- **Controllers:** Camada que recebe as requisições HTTP e aciona os serviços.
-- **Services:** Contêm a lógica de negócio da aplicação.
-- **Injeção de Dependência:** Services e Repositories são injetados nas classes para promover baixo acoplamento.
-- **Inversão de Dependência:** Utilização de interfaces e abstrações para desacoplar implementações concretas.
+- **[NestJS](https://nestjs.com/)** — A progressive Node.js framework for scalable applications.
+- **[Prisma ORM](https://www.prisma.io/)** — Modern, type-safe ORM for Node.js and TypeScript.
+- **TypeScript** — Static typing to ensure more robust code.
+- **SQLite** (or PostgreSQL) — Used as the local development database.
 
 ---
 
-## 🛠️ Instalação e Execução
+## 🎯 Project Goals
+
+- Understand the basic structure of a NestJS project.
+- Apply the **dependency injection** pattern through **providers**.
+- Learn and practice **dependency inversion**.
+- Integrate Prisma into a NestJS workflow.
+- Practice creating **modules**, **controllers**, **services**, and **custom repositories**.
+
+---
+
+## 🧠 Key Concepts
+
+- **Modules:** The core structural element of NestJS applications.
+- **Controllers:** Handle HTTP requests and route them to the correct services.
+- **Services:** Contain the business logic of the application.
+- **Dependency Injection:** Inject services and repositories into classes to keep coupling low.
+- **Dependency Inversion:** Use interfaces and abstractions to decouple code from concrete implementations.
+
+---
+
+## 🛠️ Getting Started
 
 ```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/nest-api-estudos.git
-cd nest-api-estudos
+# Clone the repository
+git clone https://github.com/your-username/nest-study-api.git
+cd nest-study-api
 
-# Instale as dependências
+# Install dependencies
 npm install
 
-# Gere o client do Prisma e execute as migrações
+# Generate Prisma client and run migrations
 npx prisma generate
 npx prisma migrate dev
 
-# Rode a aplicação
+# Run the application
 npm run start:dev
