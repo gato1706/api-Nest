@@ -2,28 +2,59 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+# 🚀 NestJS API de Estudos — Rocketseat 🔥
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+Este projeto foi desenvolvido com o objetivo de aprender os fundamentos do NestJS, explorando os conceitos de **injeção de dependência**, **inversão de dependência**, e integração com **Prisma ORM** para acesso a banco de dados.  
+O projeto segue a arquitetura modular que o NestJS propõe, e foi baseado na aula do Diego Fernandes (Rockeseat), disponível neste link:  
+📺 [Assista a aula aqui](https://www.youtube.com/live/TRa55WbWnvQ?si=W6OI7_pqaOHO5Kt2)
 
-## Description
+---
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## 📦 Tecnologias Utilizadas
+
+- **[NestJS](https://nestjs.com/)** — Framework Node.js com foco em arquitetura escalável.
+- **[Prisma ORM](https://www.prisma.io/)** — ORM moderno, typesafe e auto-gerado para Node.js e TypeScript.
+- **TypeScript** — Tipagem estática pra deixar o código mais robusto.
+- **SQLite** (ou PostgreSQL) — Banco de dados utilizado durante os testes locais.
+
+---
+
+## 🎯 Objetivos do Projeto
+
+- Entender a estrutura de um projeto NestJS.
+- Aplicar o padrão de **injeção de dependências** via **providers**.
+- Compreender a **inversão de dependência** na prática.
+- Integrar o Prisma ao NestJS para realizar operações com banco de dados.
+- Praticar a criação de **módulos**, **controllers**, **services** e **repositórios customizados**.
+
+---
+
+## 🧠 Conceitos Explorados
+
+- **Módulos (Modules):** Estrutura base do Nest para organização do código.
+- **Controllers:** Camada que recebe as requisições HTTP e aciona os serviços.
+- **Services:** Contêm a lógica de negócio da aplicação.
+- **Injeção de Dependência:** Services e Repositories são injetados nas classes para promover baixo acoplamento.
+- **Inversão de Dependência:** Utilização de interfaces e abstrações para desacoplar implementações concretas.
+
+---
+
+## 🛠️ Instalação e Execução
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/nest-api-estudos.git
+cd nest-api-estudos
+
+# Instale as dependências
+npm install
+
+# Gere o client do Prisma e execute as migrações
+npx prisma generate
+npx prisma migrate dev
+
+# Rode a aplicação
+npm run start:dev
 
 ## Project setup
 
